@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - ISTE</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/registration.css" />
+</head>
+
+<body>
+    <!-- Animated Space Background -->
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="meteors"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="index.html" class="logo-link" aria-label="Home">
+                    <img src="../IMAGES/210842040_186984500046314_1943796015003147961_n.jpg" alt="ISTE Logo"
+                        class="iste-logo" loading="lazy">
+                    <h1 class="society-name">ISTE SCTCE</h1>
+                </a>
+            </div>
+            <div class="header-center-logo">
+                <img src="../IMAGES/istelogofinal-removebg-preview.png" alt="ISTE Logo" class="center-logo"
+                    loading="eager">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link" aria-label="Home" title="Home"><img
+                        src="../ICON/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home icon" class="nav-icon"
+                        role="img" aria-hidden="true"></a>
+                <a href="index.html#events" class="nav-link" aria-label="Events" title="Events"><img
+                        src="../ICON/event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Events icon"
+                        class="nav-icon" role="img" aria-hidden="true"></a>
+                <a href="index.html#contact" class="nav-link contact-link" aria-label="Contact" title="Contact"><img
+                        src="../ICON/mail_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Contact icon"
+                        class="nav-icon" role="img" aria-hidden="true"></a>
+                <div class="more-menu">
+                    <button class="more-button nav-link" aria-haspopup="true" aria-expanded="false"
+                        aria-label="More menu" title="More">
+                        <img src="../ICON/more_vert_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="More icon"
+                            class="nav-icon" role="img" aria-hidden="true">
+                    </button>
+                    <div class="more-dropdown" role="menu" aria-label="More menu items">
+                        <a href="execom.html" class="more-item execom-link" role="menuitem" aria-label="Execom Members"
+                            title="Execom Members">
+                            <img src="../ICON/groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Execom"
+                                class="dropdown-icon">
+                        </a>
+                        <a href="forums.html" class="more-item forum-link" role="menuitem" aria-label="Forums"
+                            title="Forums">
+                            <img src="../ICON/communities_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Forums"
+                                class="dropdown-icon">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="registration-main">
+        <article class="container">
+            <section class="registration-section">
+                <h1 class="page-title">ISTE Membership Registration</h1>
+                <form id="registration-form" class="registration-form glass-effect">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Branch of Study</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select branch</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electronics and Communication">Electronics and Communication</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Biotechnology and Chemical Engineering">Biotechnology and Chemical
+                                Engineering</option>
+                            <option value="Computer Science-AI&ML">Computer Science-AI&ML</option>
+                            <option value="Mechanical and Automobile Engineering">Mechanical and Automobile Engineering
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10 digits)</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <p class="membership-options-title">Membership Options</p>
+                        <div class="radio-group">
+                            <input type="radio" id="four-year-membership" name="membership" value="2000" required />
+                            <label for="four-year-membership">Four-Year ISTE Membership: ₹1999/-</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="one-year-membership" name="membership" value="650" />
+                            <label for="one-year-membership">One-Year ISTE Membership: ₹649/-</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="two-year-membership" name="membership" value="1250" />
+                            <label for="two-year-membership">Two-Year ISTE Membership (2nd Years Only): ₹1199/-</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="screenshot">Screenshot of Payment* (File size less than 4 MB)</label>
+                        <input type="file" id="screenshot" name="screenshot" accept="image/*,application/pdf"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div id="submission-status"></div>
+            </section>
+
+            <!-- Fee Structure Poster -->
+            <section class="fee-poster">
+                <h2 class="fee-poster-title">Date With Us</h2>
+                <p class="fee-poster-subtitle">ISTE Student Chapter – Membership & Forum Fee Structure</p>
+
+                <div class="fee-grid">
+                    <div class="fee-card">
+                        <h3 class="fee-card-title">1-Year ISTE</h3>
+                        <p class="fee-card-price">₹649</p>
+                        <p class="fee-card-description">Valid for one academic year. Forum fees are additional.</p>
+                    </div>
+                    <div class="fee-card">
+                        <h3 class="fee-card-title">2-Year ISTE</h3>
+                        <p class="fee-card-price">₹1199</p>
+                        <p class="fee-card-description">For second years only. One forum free for one year.</p>
+                    </div>
+                    <div class="fee-card best-value">
+                        <div class="best-value-badge">Best Value</div>
+                        <h3 class="fee-card-title">4-Year ISTE</h3>
+                        <p class="fee-card-price">₹1999</p>
+                        <p class="fee-card-description">Valid for all 4 years. Any two forums free for one year + Free
+                            Merch</p>
+                    </div>
+                </div>
+
+                <div class="summary-section">
+                    <h3 class="summary-title">Forum Membership (Per Year)</h3>
+                    <ul class="summary-list">
+                        <li><strong>SWaS Forum:</strong> ₹299</li>
+                        <li><strong>EXIS Forum:</strong> ₹149</li>
+                        <li><strong>TORQ Forum:</strong> ₹129</li>
+                        <li><strong>BITS Forum:</strong> ₹129</li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ISTE SCTCE</h3>
+                    <p>Indian Society for Technical Education<br>Sree Chithra Thirunal College of Engineering</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#events">Events</a>
+                    <a href="execom.html">Execom Members</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <a href="https://www.instagram.com/istesctsc/">Instagram</a>
+                    <a href="#">LinkedIn</a>
+
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: istesctce@gmail.com</p>
+                    <p>Phone: +91 96566 689130</p>
+                    <div class="location-info">
+                        <h4>Find Us</h4>
+                        <p class="address">NH 66, CTO Colony, Pappanamcode,<br>Thiruvananthapuram, Kerala 695018</p>
+                        <a href="https://www.google.com/maps/place/Sree+Chitra+Thirunal+College+of+Engineering,+Thiruvananthapuram/@8.4705885,76.9382283,11913m/data=!3m1!1e3!4m6!3m5!1s0x3b05baee56e6b99b:0x4ce024c88eb0ddcb!8m2!3d8.4705058!4d76.9794284!16zL20vMGZrMzR2!5m1!1e2"
+                            class="map-link" target="_blank" rel="noopener noreferrer">
+                            <i class="map-icon">📍</i> View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ISTE SCTCE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js" defer></script>
+
+    <!-- Your custom scripts -->
+    <script src="../JS/scroll-animations.js" defer></script>
+    <script src="../JS/registration.js" defer></script>
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/parallax.js" defer></script>
+</body>
+
+</html>
